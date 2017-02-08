@@ -189,26 +189,17 @@
           <h1 class="section-title wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="100ms">Subscribe</h1>
           <p>Subscribe to our newsletter to keep up with our athletes, information and services:</p>
         </div>
-        <form action="index.html" method="post">
+        <div class="container">
           <div class="row">
-            <div class="col s12">
-              <div class="input-field inline">
+            <form class="col l12 s12" action="index.html" method="post">
+              <div class="center-align text-center input-field inline">
                 <input id="email" type="email" class="validate" name="email" placeholder="Email address" autofocus>
-                <label for="email" data-error="wrong" data-success="right">Email</label>
+                <label class="active" for="email" data-error="wrong" data-success="right">Email</label>
+                <a id="submit-button" class="btn btn-lg btn-primary" href="#" type="submit" name="action">Subscribe</a>
               </div>
-              <div class="input-field inline">
-                <a class="btn waves-effect waves-light green" type="submit" name="action">Subscribe</a>
-              </div>
-            </div>
+            </form>
           </div>
-        </form>
-        
-        
-          <!--<form action="index.html" method="post" class="subscribe-form; item text-center">
-            <input id="email" type="email" name="email" class="validate" placeholder="Email address" autofocus>
-            <label for="email" data-error="wrong" data-success="right">Email</label>
-            <a class="btn waves-effect waves-light green" type="submit" name="action">Subscribe</a>
-          </form>-->
+        </div>
       </section> <!-- Subscribe -->
 
       <br><br><br>
@@ -286,6 +277,7 @@
     <!--<script src="js/main.js"></script>-->
     <script>
       $(document).ready(function() {
+        Materialize.updateTextFields();
         // This command is used to initialize some elements and make them work properly
         $.material.init();
       });
