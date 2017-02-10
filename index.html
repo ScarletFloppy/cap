@@ -189,17 +189,42 @@
           <h1 class="section-title wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="100ms">Subscribe</h1>
           <p>Subscribe to our newsletter to keep up with our athletes, information and services:</p>
         </div>
-        <div class="container">
+        <!--<div class="container">
           <div class="row">
             <form class="col l12 s12" action="index.html" method="post">
               <div class="center-align text-center input-field inline">
-                <input id="email" type="email" class="validate" name="email" placeholder="Email address" autofocus>
+                <input id="email" type="email" class="input-field validate" name="email" placeholder="Email address" autofocus>
                 <label class="active" for="email" data-error="wrong" data-success="right">Email</label>
                 <a id="submit-button" class="btn btn-lg btn-primary" href="#" type="submit" name="action">Subscribe</a>
               </div>
             </form>
           </div>
+        </div>-->
+
+        <!-- Begin MailChimp Signup Form -->
+        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+          #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+          /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+             We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div id="mc_embed_signup">
+          <form action="//conquesttrained.us15.list-manage.com/subscribe/post?u=2faa8fb0058958e378f631709&amp;id=34e6190fa1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_2faa8fb0058958e378f631709_34e6190fa1" tabindex="-1" value="">
+              </div>
+              <div class="clear">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color:#009788;">
+              </div>
+            </div>
+          </form>
         </div>
+        <!--End mc_embed_signup-->
+
+
       </section> <!-- Subscribe -->
 
       <br><br><br>
@@ -274,10 +299,10 @@
     <script src="js/smooth-on-scroll.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/material.min.js"></script>
-    <!--<script src="js/main.js"></script>-->
+    <script src="js/main.js"></script>
     <script>
       $(document).ready(function() {
-        Materialize.updateTextFields();
+        //Materialize.updateTextFields();
         // This command is used to initialize some elements and make them work properly
         $.material.init();
       });
