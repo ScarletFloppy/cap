@@ -1,1 +1,0 @@
-docker run --name cap -d -p 8080:80 -v /Users/eric/github/cap:/var/www:ro -v /Users/eric/github/cap/nginx:/etc/nginx:ro nginx:alpine
