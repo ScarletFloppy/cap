@@ -50,7 +50,9 @@ jQuery(function($) {
 	}
 
 	function initEvents() {
-		openbtn.addEventListener( 'click', toggleMenu );
+		if(openbtn) {
+			openbtn.addEventListener( 'click', toggleMenu ); // Without this line in an if statement checking for openbtn, if there is no openbtn (this can happen on desktops not showing mobile view or anywhere that lacks an openbtn id) this script will crash here preventing further js and jquery from loading and running.
+		}
 		if( closebtn ) {
 			closebtn.addEventListener( 'click', toggleMenu );
 		}
